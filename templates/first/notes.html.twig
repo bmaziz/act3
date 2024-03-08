@@ -1,0 +1,12 @@
+<ul>
+{% for note in notes %}
+   <li> {{note}}
+   {% if note >=10 %}
+    superieure ou egale
+   {% else %}
+      inferieure
+   {% endif%}
+   à 10
+   </li>
+{% endfor %}
+</ul>

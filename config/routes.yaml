@@ -1,0 +1,24 @@
+index:
+    path: /
+    controller: App\Controller\DemoController::index
+test:
+    path: /test/{age<\d+>?0]
+    controller: App\Controller\DemoController::test
+    methods: [GET, POST]
+    host: localhost
+    schemes: [https, http]
+somme :
+    path: /somme/{a}/{b}
+    controller: App\Controller\SommeController::somme
+home:
+    path: /home
+    controller: App\Controller\HomeController::home
+second:
+    path: /second
+    controller: App\Controller\HomeController::second
+index2:
+    path: /{username}
+    controller: App\Controller\DemoController::index2
+    methods: [GET, POST]
+    host: localhost
+    schemes: [https, http]
